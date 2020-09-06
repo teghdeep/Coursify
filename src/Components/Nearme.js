@@ -34,7 +34,12 @@ const options = {
 
 export default function App() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBCO7fqvr8Uzl-GSJgZDA4Lzb1nrw6Yx7o",
+    // googleMapsApiKey: "AIzaSyBPF9Ms5bLeYdvB8IU5ny8gfion_JmyrD0",
+    // googleMapsApiKey: "AIzaSyBCO7fqvr8Uzl-GSJgZDA4Lzb1nrw6Yx7o",
+    googleMapsApiKey: "AIzaSyCj8AF7m9QXW0untu-KF-DZA2oCjXK7NHM",
+    // googleMapsApiKey: "AIzaSyCq-GMlFPxSi4Hlw6-8pttvoPb8WFLoON4",
+    //AIzaSyCj8AF7m9QXW0untu-KF-DZA2oCjXK7NHM
+    //AIzaSyCq-GMlFPxSi4Hlw6-8pttvoPb8WFLoON4
     libraries,
   });
   const [markers, setMarkers] = React.useState([]);

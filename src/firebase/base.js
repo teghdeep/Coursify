@@ -167,17 +167,17 @@ class Firebase {
     return this.auth.currentUser && this.auth.currentUser.email;
   }
 
-  // async getCurrentUserDetail(email) {
-  //   await this.db
-  //     .collection("users")
-  //     .where("email", "==", `${email}`)
-  //     .get()
-  //     .then((querySnapshot) => {
-  //       const data = querySnapshot.docs.map((doc) => doc.data());
-  //       console.log(data);
-  //       return data;
-  //     });
-  // }
+  async getCurrentUserDetail(email) {
+    await this.db
+      .collection("users")
+      .where("email", "==", `${email}`)
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => doc.data());
+
+        return data[0];
+      });
+  }
 }
 
 export default new Firebase();

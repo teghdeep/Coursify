@@ -99,10 +99,19 @@ function App({ history }) {
   //  const [newSpellName, setNewSpellName] = React.useState();
   var data;
   React.useEffect(() => {
+    // const fetchuser = async () => {
+    //   const data2 = await firebase.getCurrentUserDetail(
+    //     firebase.getCurrentUsername()
+    //   );
+    //   setUserdetail(data2);
+    // };
+    // setUserdetail(data2);
+
     const fetchdata = async () => {
       await firebase.db
         .collection("customers")
         .where("complete", "==", false)
+
         .get()
         .then((querySnapshot) => {
           data = querySnapshot.docs.map((doc) => doc.data());
@@ -112,6 +121,7 @@ function App({ history }) {
           // console.log(userdetail[0].name);
         });
     };
+    // fetchuser();
     fetchdata();
   });
 
@@ -161,7 +171,6 @@ function App({ history }) {
                   {customers.map((row) =>
                     row.helped === "" ? (
                       <StyledTableRow key={row.name}>
-                        {console.log("data: " + row.name)}
                         <StyledTableCell padding="checkbox">
                           <Checkbox
                             //checked={selected}

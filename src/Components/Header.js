@@ -15,24 +15,28 @@ const Header = (props) => {
               <li className="menu-active">
                 <a href="/">Home</a>
               </li>
+              <li>
+                <a href="/aboutus">About Us</a>
+              </li>
               {props !== undefined &&
               props !== null &&
               props.currUser !== null ? (
-              <li>
-                <a href="/profile">Profile</a>
-              </li>):(
                 <li>
-                <a href="/locate">Need help</a>
-              </li>
+                  <a href="/profile">Profile</a>
+                </li>
+              ) : (
+                <li>
+                  <a href="/locate">Need help</a>
+                </li>
               )}
-               {props !== undefined &&
+              {props !== undefined &&
               props !== null &&
               props.currUser !== null ? (
                 <></>
-              ):(
+              ) : (
                 <li>
-                <a href="/login">Want to help</a>
-              </li>
+                  <a href="/login">Want to help</a>
+                </li>
               )}
               {props !== undefined &&
               props !== null &&
@@ -40,11 +44,15 @@ const Header = (props) => {
                 <button
                   onClick={() => {
                     firebase.logout();
-                    window.location = "http://localhost:3000/"
+                    window.location = "http://localhost:3000/";
                     //window.Location("/");
                   }}
                   className="form-btn"
-                  style={{borderRadius:"10px", height:"30px", lineHeight:" 0px"}}
+                  style={{
+                    borderRadius: "10px",
+                    height: "30px",
+                    lineHeight: " 0px",
+                  }}
                 >
                   Logout
                 </button>
