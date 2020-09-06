@@ -12,7 +12,7 @@ import Locate from "./Components/Locate";
 import NotFound from "./Components/NotFound";
 import Nearme from "./Components/Nearme";
 import Footer from "./Components/Footer";
-import AboutUs from "./Components/AboutUs";
+
 import firebase from "./firebase/base";
 import { lastDayOfDecade } from "date-fns";
 
@@ -59,10 +59,6 @@ function App() {
 
         <Route path="/helpedlist">
           <HelpedList />
-        </Route>
-
-        <Route path="/aboutus">
-          <AboutUs />
         </Route>
 
         <Route path="*">

@@ -15,9 +15,7 @@ const Header = (props) => {
               <li className="menu-active">
                 <a href="/">Home</a>
               </li>
-              <li>
-                <a href="/aboutus">About Us</a>
-              </li>
+
               {props !== undefined &&
               props !== null &&
               props.currUser !== null ? (
