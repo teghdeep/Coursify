@@ -1,4 +1,4 @@
-# Intellectual_Coders_teghdeep
+# Shelterize
 This Web Application aims at providing shelter to the victims hit by natural calamities.
 
 # Team Members
