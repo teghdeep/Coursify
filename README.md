@@ -1,12 +1,12 @@
-# Shelterize
-This Web Application aims at providing shelter to the victims hit by natural calamities.
+# Coursify
+This Web Application to provide educational websites a starting template to work on.
 
 # Team Members
-1. Tanya Pandhi
-2. Teghdeep Kapoor
+1. Teghdeep Kapoor
+2. Dhananjay Sharma
 
-# YouTube Demo Video
-https://youtu.be/Y7swGOBIp-o
+# Demo Link
+https://coursify-249ca.web.app/
 
 # How To Run The Project
 1. npm install
