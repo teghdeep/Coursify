@@ -1,10 +1,6 @@
 # Coursify
 This Web Application to provide educational websites a starting template to work on.
 
-# Team Members
-1. Teghdeep Kapoor
-2. Dhananjay Sharma
-
 # Demo Link
 https://coursify-249ca.web.app/
 
