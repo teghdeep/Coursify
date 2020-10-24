@@ -1,5 +1,5 @@
 import React from "react";
-import firebase from "../firebase/base";
+
 const Header = (props) => {
   return (
     <header id="header" className="header-scrolled">
@@ -7,56 +7,40 @@ const Header = (props) => {
         <div className="row align-items-center justify-content-between d-flex">
           <div id="logo">
             <a href="/">
-              <h2>Shelterize</h2>
+              <h2>Coursify</h2>
             </a>
           </div>
           <nav id="nav-menu-container">
             <ul className="nav-menu sf-js-enabled sf-arrows">
               <li className="menu-active">
-                <a href="/">Home</a>
+                <a href="/">Boards</a>
               </li>
-
-              {props !== undefined &&
-              props !== null &&
-              props.currUser !== null ? (
-                <li>
-                  <a href="/profile">Profile</a>
-                </li>
-              ) : (
-                <li>
-                  <a href="/locate">Need help</a>
-                </li>
-              )}
-              {props !== undefined &&
-              props !== null &&
-              props.currUser !== null ? (
-                <></>
-              ) : (
-                <li>
-                  <a href="/login">Want to help</a>
-                </li>
-              )}
-              {props !== undefined &&
-              props !== null &&
-              props.currUser !== null ? (
-                <button
+              <li>
+                <a href="/">Books</a>
+              </li>
+              <li>
+                <a href="/">Exams</a>
+              </li>
+              <li>
+                <a href="/">Why us?</a>
+              </li>
+              <li>
+              <button
                   onClick={() => {
-                    firebase.logout();
-                    window.location = "http://localhost:3000/";
-                    //window.Location("/");
+                    window.Location("/");
                   }}
                   className="form-btn"
                   style={{
                     borderRadius: "10px",
                     height: "30px",
                     lineHeight: " 0px",
+                    
                   }}
                 >
-                  Logout
+                  Sign Up
                 </button>
-              ) : (
-                <></>
-              )}
+                </li>
+              
             </ul>
           </nav>
         </div>
